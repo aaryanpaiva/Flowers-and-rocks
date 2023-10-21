@@ -9,7 +9,6 @@
 - [Input Data](#input-data)
 - [Output Data](#output-data)
 - [Usage](#usage)
-- [Example](#example)
 - [License](#license)
 - [Author](#author)
 
