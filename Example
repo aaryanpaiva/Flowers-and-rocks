@@ -1,0 +1,53 @@
+# Example Input and Output
+
+This ection provides an example input file and the corresponding output for the "Flowers and Rocks" problem.
+
+## Example Input
+
+### Input (in `input.txt`):
+
+```plaintext
+3
+5 5 4 15
+0 0
+0 1
+0 2
+0 4
+1 0
+1 4
+2 1
+2 3
+3 0
+3 1
+3 2
+3 4
+4 2
+4 3
+4 4
+6 7 3 8
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+2 0
+2 1
+2 2
+2 3
+2 4 5 6
+3 0
+3 1
+4 0
+4 1
+
+## Example Output
+
+### Output (in `output.txt`):
+
+  Case #1: 3
+  Case #2: 4
+  Case #3: 2
+
+##
+You can replace the example input and output data with your specific example once you have it ready.
