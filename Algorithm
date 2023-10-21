@@ -1,0 +1,39 @@
+# Algorithm
+
+## Initialization:
+1. Open the input and output files for reading and writing.
+2. Read the number of test cases T from the input file.
+
+## Test Case Loop:
+3. For each test case from 1 to T, do the following:
+   a. Print the case number: "Case #k:", where k is the current test case number.
+   b. Read a line from the input file containing four space-separated integers: w, h, F, and G, representing grid dimensions, required points, and the number of points.
+   c. Initialize arrays and variables:
+      - x[] and y[] to store coordinates of points.
+      - dis[][] to store distances between points.
+      - v as an empty ArrayList to keep track of selected points.
+   d. For each of the G points, read a line with two space-separated integers for x and y coordinates, and store them in the x[] and y[] arrays.
+   e. Calculate Manhattan distances between all pairs of points and store them in dis[][].
+
+## Binary Search for Minimum Distance:
+4. Set lo to 0 and hi to the sum of w and h.
+5. While lo is less than hi, do the following:
+   a. Calculate mid as the average of lo and hi.
+   b. Set test to mid.
+   c. Calculate F and G based on w, h, and the current test.
+   d. Clear the v ArrayList.
+   e. Call the check function with cur initially set to 0 to explore point combinations.
+   f. If check returns true, update hi to mid.
+   g. Otherwise, update lo to mid + 1.
+
+## Output Result:
+6. Print the value of lo, representing the minimum distance required to connect F points with a maximum distance of w in the x-direction and h in the y-direction.
+
+## Close Files:
+7. Close the input and output files.
+
+## Check Function:
+8. The check function recursively explores combinations of points to find a set of F points where the distance between any two points is greater than or equal to test. If such a combination is found, the function returns true; otherwise, it returns false.
+
+## Point Distance Calculation:
+9. The distance between two points (x1, y1) and (x2, y2) is calculated using the Manhattan distance formula: |x1 - x2| + |y1 - y2|.
